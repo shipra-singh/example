@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>aaa</title>
+<script src="js/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/pjax/jquery.pjax.min.js"></script>
+<script>
+$(function(){
+    $.pjax({
+        area : '#content',
+        link : 'a.pjax'
+    });
+});
+</script>
+<style>
+dl#nav, div#content {
+	border: solid 1px #ccc;
+	padding:10px;
+}
+</style>
+</head>
+<body>
+<dl id="nav">
+<dt>index.htmlに書かれたリンクのリスト</dt>
+<dd><a class="pjax" href="index.html">index.htmlへ</a></dd>
+<dd><a class="pjax" href="index2.html">index2.htmlへ</a></dd>
+<dd><a class="pjax" href="index3.html">index3.htmlへ</a></dd>
+</dl>
+<div id="content">
+index.htmlに書かれたメッセージ あいうえお
+</div>
+</body>
+</html>
