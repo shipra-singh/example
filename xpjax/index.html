@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>pjax demo1</title>
   
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheet.css">
 
     <style>
         #header {
@@ -34,8 +34,8 @@
             background: #00e;
         }
     </style>
-    <script src="./jquery.min.js"></script>
-    <script src="./jquery.pjax.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.pjax.js"></script>
     <script>
         $(function () {
             $.pjax({
@@ -44,7 +44,7 @@
                     active: true,
                     random: 5,
                     client: {
-                        hosts: ['', 'falsandtru.s3-website-us-west-2.amazonaws.com:80']
+                        hosts: ['', '']
                     }
                 },
                 rewrite: function (document, area, host) {
@@ -87,9 +87,9 @@ window.ga('send', 'pageview', window.location.pathname+window.location.search);
                         <p>primary1</p>
                         <p>pjax test</p>
                              <ul>
-                            <li><a href="./index1.html">page1</a></li>
-                            <li><a href="./2.html">page2</a></li>
-                            <li><a href="./3.html">page3 </a></li>
+                            <li><a href="index1.html">page1</a></li>
+                            <li><a href="2.html">page2</a></li>
+                            <li><a href="3.html">page3 </a></li>
                         </ul>
 
                     </div>
@@ -101,9 +101,9 @@ window.ga('send', 'pageview', window.location.pathname+window.location.search);
 
                     <p>secondary1</p>
                     <ul>
-                        <li><a href="scripts/index1.html">page1</a></li>
-                        <li><a href="scripts/2.html">page2</a></li>
-                        <li><a href="scripts/3.html">page3 </a></li>
+                        <li><a href="index1.html">page1</a></li>
+                        <li><a href="2.html">page2</a></li>
+                        <li><a href="3.html">page3 </a></li>
                     </ul>
 
                 </div>
