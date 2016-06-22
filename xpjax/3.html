@@ -53,6 +53,8 @@
                 rewrite: function (document, area, host) {
                     $("#header span.host", document).text(host || window.location.host);
                 },
+                load: { css: true },
+                cache: { click: true, submit: true, popstate: true },
                 callback: function () { ga('send', 'pageview', window.location.pathname + window.location.search); $('#primary small').last().text('location = ' + location); },
                 speedcheck: true
             });
