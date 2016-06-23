@@ -1,14 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>pjax demo1</title>
-  
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylesheet.css">
-
     <style>
         #header {
             background: #ee0;
@@ -52,28 +50,27 @@
                 },
                 load: { css: true },
                 cache: { click: true, submit: true, popstate: true },
-                callback: function () { ga('send', 'pageview', window.location.pathname + window.location.search); $('#primary small').last().text('location = ' + location); },
-                speedcheck: true
+               // callback: function () { ga('send', 'pageview', window.location.pathname + window.location.search); $('#primary small').last().text('location = ' + location); },
+              //  speedcheck: true
             });
             
         });
     </script>
     <script>
-if (!window.ga) {
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//if (!window.ga) {
+//  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+////  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-43533651-1', 'auto');
-}
-window.ga('send', 'pageview', window.location.pathname+window.location.search);
+ // ga('create', 'UA-43533651-1', 'auto');
+//}
+//window.ga('send', 'pageview', window.location.pathname+window.location.search);
     </script>
 </head>
 <body>
     <div id="container" class="layout-213">
-        <!-- ----- HEADER ------------------------------------------------------------- -->
-        <header id="header">
+                <header id="header">
             <div class="wrapper clearfix">
 
                 <h1>pjax demo</h1>
@@ -81,8 +78,7 @@ window.ga('send', 'pageview', window.location.pathname+window.location.search);
             </div>
         </header>
         <div id="wrapper" class="wrapper clearfix">
-            <!-- ----- PRIMARY ------------------------------------------------------------ -->
-            <div id="primary">
+                       <div id="primary">
                 <div id="layout">
                     <div class="wrapper clearfix">
 
@@ -94,31 +90,22 @@ window.ga('send', 'pageview', window.location.pathname+window.location.search);
                             <li><a href="2.html">page3</a></li>
                             <li><a href="3.html">page4 </a></li>
                         </ul>
-
                     </div>
                 </div>
             </div>
-            <!-- ----- SECONDARY ---------------------------------------------------------- -->
-            <div id="secondary">
+                      <div id="secondary">
                 <div class="wrapper clearfix">
-
                     <p>secondary1</p>
-                   
-                </div>
+                 </div>
             </div>
-            <!-- ----- TERTIARY ----------------------------------------------------------- -->
-            <div id="tertiary">
+                     <div id="tertiary">
                 <div class="wrapper clearfix">
-
                     <p>tertiary1</p>
-
                 </div>
             </div>
         </div>
-        <!-- ----- FOOTER ------------------------------------------------------------- -->
-        <footer id="footer">
+                <footer id="footer">
             <div class="wrapper clearfix">
-
                 <p>footer1</p>
             </div>
         </footer>
